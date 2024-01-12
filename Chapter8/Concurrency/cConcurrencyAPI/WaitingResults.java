@@ -21,6 +21,15 @@ public class WaitingResults {
             } finally {
                 if (service != null) service.shutdown();
             }
+
+            if(service != null) {
+                //The method waits the specified time to complete all tasks
+                service.awaitTermination(1, TimeUnit.MINUTES);
+                // Check whether all tasks are finished
+                if(service.isTerminated()) System.out.println("Finished!");
+                else System.out.println("At least one task is still running");
+            }
+
         }
     }
 
