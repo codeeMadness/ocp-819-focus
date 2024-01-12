@@ -1,4 +1,4 @@
-package Chapter10.SecureCoding.PreventInjection;
+package Chapter10.SecureCoding.bPreventInjection;
 
 import java.sql.Connection;
 import java.sql.SQLException;

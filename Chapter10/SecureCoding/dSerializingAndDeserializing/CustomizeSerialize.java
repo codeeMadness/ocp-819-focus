@@ -1,4 +1,4 @@
-package Chapter10.SecureCoding.SerializingAndDeserializing;
+package Chapter10.SecureCoding.dSerializingAndDeserializing;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;

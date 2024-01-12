@@ -1,4 +1,4 @@
-package Chapter10.SecureCoding.SecureObject;
+package Chapter10.SecureCoding.aSecureObject;
 
 import java.util.ArrayList;
 
