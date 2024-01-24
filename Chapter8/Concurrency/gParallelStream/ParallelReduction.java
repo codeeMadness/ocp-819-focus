@@ -50,7 +50,7 @@ public class ParallelReduction {
         System.out.println(map.getClass()); // java.util.concurrent.ConcurrentHashMap
 
         var ohMy2 = Stream.of("lions","tigers","bears").parallel();
-        ConcurrentMap<Integer, List<String>> map2 = ohMy.collect(
+        ConcurrentMap<Integer, List<String>> map2 = ohMy2.collect(
                 Collectors.groupingByConcurrent(String::length));
         System.out.println(map2); // {5=[lions, bears], 6=[tigers]}
     }
