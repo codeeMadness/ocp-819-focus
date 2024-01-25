@@ -48,5 +48,28 @@ public class ConvertArraysAndList {
          list3.set(1, "test"); // throws UnsupportedOperationException
     }
 
+    /**
+     * List.toArray() => Array
+     * Allow to remove items: x
+     * Allow to update items: v
+     * Affect Original: x
+     *
+     * **/
 
+     /**
+      * Arrays.asList() => List
+      * Allow to remove items: x
+      * Allow to update items: v
+      * Affect Original: v
+      *
+      * **/
+
+     /** immutable list
+      *
+      * List.of() => List
+      * Allow to remove items: x
+      * Allow to update items: x
+      * Affect Original: n/a
+      *
+      * **/
 }
