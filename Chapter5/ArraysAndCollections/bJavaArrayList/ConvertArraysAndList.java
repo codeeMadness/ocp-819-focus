@@ -24,9 +24,9 @@ public class ConvertArraysAndList {
          System.out.println(stringArray.length); // 2
 
          /**Convert Array to List**/
-         String[] array = { "hawk", "robin" }; // [hawk, robin]
          //Note that it isn’t the java.util.ArrayList we’ve
          //grown used to. It is a fixed-size, backed version of a List
+         String[] array = { "hawk", "robin" }; // [hawk, robin]
          List<String> list2 = Arrays.asList(array); // returns fixed size list
 
          System.out.println(list2.size()); // 2
@@ -34,6 +34,7 @@ public class ConvertArraysAndList {
          list2.set(1, "test"); // [hawk, test]
          array[0] = "new"; // [new, test]
          System.out.print(Arrays.toString(array));// [new, test]
+         list2.forEach(System.out::println);// [new, test]
 
          //we are not allowed to change the size of the list
          list2.remove(1); // throws UnsupportedOperationException
@@ -50,25 +51,25 @@ public class ConvertArraysAndList {
 
     /**
      * List.toArray() => Array
-     * Allow to remove items: x
-     * Allow to update items: v
-     * Affect Original: x
+     * Allow to remove items: no
+     * Allow to update items: yes
+     * Affect Original: no
      *
      * **/
 
      /**
       * Arrays.asList() => List
-      * Allow to remove items: x
-      * Allow to update items: v
-      * Affect Original: v
+      * Allow to remove items: no
+      * Allow to update items: yes
+      * Affect Original: yes
       *
       * **/
 
-     /** immutable list
+     /** Immutable list
       *
       * List.of() => List
-      * Allow to remove items: x
-      * Allow to update items: x
+      * Allow to remove items: no
+      * Allow to update items: no
       * Affect Original: n/a
       *
       * **/
